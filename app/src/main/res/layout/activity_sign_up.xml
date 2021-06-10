@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="30dp">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="237dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="75dp"
+        android:maxHeight="75dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_camera_front" />
+
+    <EditText
+        android:id="@+id/editText_email_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+        <ImageView
+            android:id="@+id/show_pass"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_visibility"
+            android:layout_marginStart="-50dp"
+            android:onClick="ShowHidePass"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editText_repeat_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repeat Password"
+            android:inputType="textPassword"/>
+        <ImageView
+            android:id="@+id/show_repass"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_visibility"
+            android:layout_marginStart="-50dp"
+            android:onClick="ShowHideRePass"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:background="#4f9ce4"/>
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:onClick="go_login_page"
+        android:background="#4f9ce4"/>
+</LinearLayout>
